@@ -54,6 +54,7 @@ function OpenAnimationsMenu()
 
 	ESX.UI.Menu.Open('default', GetCurrentResourceName(), 'animations',
 	{
+		css		 = 'anim',
 		title    = 'Animations',
 		align    = 'top-left',
 		elements = elements
@@ -87,6 +88,7 @@ function OpenAnimationsSubMenu(menu)
 
 	ESX.UI.Menu.Open('default', GetCurrentResourceName(), 'animations_sub',
 	{
+		css		 = 'anim',
 		title    = title,
 		align    = 'top-left',
 		elements = elements
@@ -112,7 +114,7 @@ Citizen.CreateThread(function()
 	while true do
 		Citizen.Wait(0)
 
-		if IsControlJustReleased(0, Keys['F1']) and IsInputDisabled(0) and not isDead then
+		if IsControlJustReleased(0, Keys['F3']) and IsInputDisabled(0) and not isDead then
 			OpenAnimationsMenu()
 		end
 

@@ -10,3 +10,8 @@ client_scripts {
 }
 
 dependency 'es_extended'
+
+exports {
+  'OpenAnimationsMenu'
+}
+
