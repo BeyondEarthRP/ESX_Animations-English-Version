@@ -119,8 +119,8 @@ Citizen.CreateThread(function()
 			OpenAnimationsMenu()
 		end
     ]]--
-    
-		if IsControlJustReleased(0, Keys['X']) and IsInputDisabled(0) and not isDead then
+
+		if IsControlJustReleased(0, 45) and IsInputDisabled(0) and not isDead then  -- 45 = Gamepad(B) & Keyboard(R) // old: Keys['X']
 			ClearPedTasks(PlayerPedId())
 		end
 
